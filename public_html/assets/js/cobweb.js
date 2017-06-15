@@ -12,7 +12,7 @@ url = "https://damexicanjustice.github.io/cobweb/public_html/index.html#work"
 
         if (window.location.href == url && !hasLoaded) {
             $("#cobweb").html(streams);
-            $("#chat").html(chats)
+            //$("#chat").html(chats)
             hasLoaded = true;
                 }
 
