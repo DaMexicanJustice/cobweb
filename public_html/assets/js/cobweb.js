@@ -15,5 +15,6 @@ window.setInterval(function(){
             //$("#chat").html(chats)
             hasLoaded = true;
         }
-    }, 1000);
+    }
+    , 1000);
 })
