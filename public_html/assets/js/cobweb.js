@@ -12,7 +12,7 @@ window.setInterval(function(){
     $(document).ready(function() {
         if (window.location.href == url && !hasLoaded) {
             $("#cobweb").html(streams);
-            //$("#chat").html(chats)
+            $("#chat").html(chats)
             hasLoaded = true;
         }
     }, 1000);
