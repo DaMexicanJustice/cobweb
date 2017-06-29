@@ -10,11 +10,11 @@ url = "https://damexicanjustice.github.io/cobweb/public_html/index.html#work"
 
 window.setInterval(function(){
     $(document).ready(function() {
-        if (window.location.href == url && !hasLoaded) {
+        $("#launch").onclick(function() {
             $("#cobweb").html(streams);
             $("#chat").html(chats)
             hasLoaded = true;
-        }
+        })  
     }
     , 1000);
 })
