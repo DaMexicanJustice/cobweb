@@ -53,4 +53,4 @@ window.setInterval(function(){
             hasLoaded = false;
         }
     }
-}, 7000);
+}, 10000);
