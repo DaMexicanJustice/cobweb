@@ -11,7 +11,7 @@ url = "https://damexicanjustice.github.io/cobweb/public_html/index.html#work"
 window.setInterval(function(){
     $(document).ready(function() {
         $("#launch").click(function() {
-            alert("Loading!");
+          
             $("#cobweb").html(streams);
             $("#chat").html(chats)
             hasLoaded = true;
