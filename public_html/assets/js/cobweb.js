@@ -8,14 +8,12 @@ chats = "<iframe frameborder='1' scrolling='true' id='damexicanjustice>' src='ht
 hasLoaded = false;
 url = "https://damexicanjustice.github.io/cobweb/public_html/index.html#work"
 
-window.setInterval(function(){
     $(document).ready(function() {
         $("#launch").click(function() {
-          
-            $("#cobweb").html(streams);
-            $("#chat").html(chats)
-            hasLoaded = true;
+            if (!hasLoaded) {
+                $("#cobweb").html(streams);
+                $("#chat").html(chats)
+                hasLoaded = true;
+            }
         })  
     }
-    , 1000);
-})
