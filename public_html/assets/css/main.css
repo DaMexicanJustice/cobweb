@@ -953,12 +953,13 @@ input[type="reset"],
 button,
 .button {
     -webkit-appearance: none;
-    display: inline-block;
+    display: block;
     background-color: #222222;
     color: #ffffff;
     border: 0;
     cursor: pointer;
     outline: 0;
+    margin: auto;
     -moz-transition: background-color .25s ease-in-out;
     -webkit-transition: background-color .25s ease-in-out;
     -ms-transition: background-color .25s ease-in-out;
