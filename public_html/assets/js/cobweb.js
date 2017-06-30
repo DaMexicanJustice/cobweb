@@ -37,4 +37,4 @@ window.setInterval(function(){
             hasLoaded = false;
         }
     }
-}, 1000);
+}, 9000);
