@@ -1,14 +1,17 @@
 
-users = ["damexicanjustice", "aaronsrl", "plywood_", "geemuguy", "mcsullysulkin", "fifilillian", "hurriboy", "spicefather", "nubzombie", "boundingray", "yourfellowdude", "saeo0901"];
+users = ["damexicanjustice", "aaronsrl", "plywood_", "geemuguy", "mcsullysulkin", "fifilillian", "hurriboy", "spicefather", "nubzombie", "boundingray", "yourfellowdude"];
 totalUsers = users.length;
-curUser = 0;
-hasLoaded = false;
+curVideoUser = 0;
+curChatUser = 0;
+hasLoadedVideo = false;
+hasLoadedChat = false;
 
 $(document).ready(function() {
     $("#spinner").hide();
    
    $("#launch").click(function() {
-      hasLoaded = true; 
+      hasLoadedVideo = true; 
+      hasLoadedChat = true;
       $("#spinner").show();
       $("#launch").hide();
       $("#cobweb").html("");
@@ -27,14 +30,24 @@ function createChatIframe(id) {
 }
 
 window.setInterval(function(){
-    if (hasLoaded) {
-        if (curUser < totalUsers) {
-            createStreamIframe(users[curUser]);
-            createChatIframe(users[curUser]);
-            curUser += 1;
+    if (hasLoadedVideo) {
+        if (curVideoUser < totalUsers) {
+            createStreamIframe(users[curVideoUser]);
+            curVideoUser += 1;
         } else {
             $("#spinner").hide();
-            hasLoaded = false;
+            hasLoadedVideo = false;
         }
     }
-}, 9000);
+}, 1000);
+
+window.setInterval(function(){
+    if (hasLoadedChat) {
+        if (curChatUser < totalUsers) {
+            createChatIframe(users[curChatUser]);
+            curChatUser += 1;
+        } else {
+            hasLoadedChat = false;
+        }
+    }
+}, 5000);
