@@ -1,5 +1,5 @@
 
-users = ["damexicanjustice", "aaronsrl", "plywood_", "geemuguy", "mcsullysulkin", "fifilillian", "hurriboy", "spicefather", "nubzombie", "boundingray", "yourfellowdude"];
+users = ["damexicanjustice", "mcsullysulkin", "hurriboy", "tommelowe", "aaronsrl", "geemuguy", "plywood_", "fifilillian", "spicefather", "nubzombie", "boundingray", "yourfellowdude"];
 totalUsers = users.length;
 curVideoUser = 0;
 curChatUser = 0;
